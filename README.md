@@ -65,4 +65,10 @@ http://127.0.0.1/redoc/
 
 # Владимир Семочкин
 
+# IP-адрес сервера:
+
+```
+158.160.54.77
+```
+
 ![workflow](https://github.com/Semavova/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
