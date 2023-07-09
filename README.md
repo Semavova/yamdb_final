@@ -16,11 +16,11 @@ DB_PORT=5432 # порт для подключения к БД
 # Инструкция по запуску приложения в контейнере
 Запускаем сборку контейнера в фоновом режиме(чтобы логи не мешали последующим действиям):
 
-```
+```bash
 docker-compose up -d
 ```
 По очереди выполняем миграции, создание суперюзера и сбор статики
-```
+```bash
 docker-compose exec web python manage.py migrate
 docker-compose exec web python manage.py createsuperuser
 docker-compose exec web python manage.py collectstatic --no-input
@@ -61,14 +61,12 @@ http://127.0.0.1/api/v1/users/
 http://127.0.0.1/redoc/
 ```
 
-# Автор проекта:
-
-# Владимир Семочкин
-
 # IP-адрес сервера:
 
 ```
 158.160.54.77
 ```
+
+Автор: [Владимир Семочкин](https://github.com/Semavova)
 
 ![workflow](https://github.com/Semavova/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
